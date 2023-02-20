@@ -1,0 +1,23 @@
+{
+    "openai_key": "",
+    "modules": [
+        "page/login",
+        "page/logout",
+        "page/homepage",
+        "page/jadwal_pendaftaran",
+        "page/info_pendaftaran",
+        "page/tata_tertib",
+        "page/lembaga",
+        "page/pondok_athfal",
+        "page/pondok_sunsal",
+        "page/pondok_putri",
+        "page/smp_putra",
+        "page/sma_putra",
+        "page/smk_putra",
+        "page/smp_putri",
+        "page/madin_putri",
+        "page/madin_putra",
+        "page/pondok_ranggeh",
+        "page/pondok_besuki"
+    ]
+}
