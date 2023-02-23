@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:psbsunsal/module/page/homepage/view/homepage_view.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -6,41 +7,46 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Dashboard"),
-        actions: const [],
-      ),
-      body: SingleChildScrollView(
-        child: Container(
-          padding: const EdgeInsets.all(10.0),
+      body: Container(
+        padding: const EdgeInsets.all(10.0),
+        child: Center(
           child: Column(
             children: [
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 100),
-                  child: Image.asset(
-                    "assets/icon.png",
-                    // width: 100.0,
-                    height: 100.0,
-                    fit: BoxFit.fill,
-                  ),
+              Padding(
+                padding: const EdgeInsets.only(top: 200),
+                child: Image.asset(
+                  "assets/icon.png",
+                  // width: 100.0,
+                  height: 200.0,
+                  fit: BoxFit.fill,
                 ),
               ),
-              Container(
-                height: 180.0,
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(
-                      "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-                    ),
-                    fit: BoxFit.cover,
-                  ),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(
-                      16.0,
-                    ),
-                  ),
+              const SizedBox(
+                height: 30.0,
+              ),
+              Text(
+                "YAYASAN SUNNIYAH SALAFIYAH",
+                style: TextStyle(
+                    fontSize: 23.0,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.blue[900]),
+              ),
+              const SizedBox(
+                height: 50.0,
+              ),
+              ElevatedButton.icon(
+                icon: const Icon(Icons.skip_next),
+                label: const Text("Lanjutkan"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black38,
                 ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const HomepageView()),
+                  );
+                },
               ),
             ],
           ),

@@ -1,5 +1,5 @@
 {
-    "openai_key": "",
+    "openai_key": "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",
     "modules": [
         "page/login",
         "page/logout",
