@@ -494,7 +494,7 @@ class HomepageView extends StatefulWidget {
                 ),
               ),
               const SizedBox(
-                height: 0.0,
+                height: 100.0,
               ),
             ],
           ),
