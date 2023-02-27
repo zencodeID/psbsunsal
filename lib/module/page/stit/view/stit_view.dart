@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
-import '../controller/pondok_ranggeh_controller.dart';
+import '../controller/stit_controller.dart';
 
-class PondokRanggehView extends StatefulWidget {
-  const PondokRanggehView({Key? key}) : super(key: key);
+class StitView extends StatefulWidget {
+  const StitView({Key? key}) : super(key: key);
 
-  Widget build(context, PondokRanggehController controller) {
+  Widget build(context, StitController controller) {
     controller.view = this;
 
     return DefaultTabController(
@@ -18,7 +18,7 @@ class PondokRanggehView extends StatefulWidget {
             onPressed: () => Navigator.of(context).pop(),
           ),
           title: const Text(
-            'PONDOK TAHFIDZ PUTRA RANGGEH',
+            'STIT SUNNIYAH SALAFIYAH',
             style: TextStyle(fontSize: 16.0),
           ),
           bottom: const TabBar(
@@ -73,5 +73,5 @@ class PondokRanggehView extends StatefulWidget {
   }
 
   @override
-  State<PondokRanggehView> createState() => PondokRanggehController();
+  State<StitView> createState() => StitController();
 }

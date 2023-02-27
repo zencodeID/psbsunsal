@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/state_util.dart';
-import '../view/smk_putra_view.dart';
+import '../view/stit_view.dart';
 
-class SmkPutraController extends State<SmkPutraView> implements MvcController {
-  static late SmkPutraController instance;
-  late SmkPutraView view;
+class StitController extends State<StitView> implements MvcController {
+  static late StitController instance;
+  late StitView view;
 
   @override
   void initState() {

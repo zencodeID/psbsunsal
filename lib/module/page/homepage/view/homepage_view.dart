@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
-import '../controller/homepage_controller.dart';
+import 'package:psbsunsal/theme.dart';
+// import '../widget/bottom_navbar.dart';
 
 class HomepageView extends StatefulWidget {
   const HomepageView({Key? key}) : super(key: key);
@@ -96,76 +97,136 @@ class HomepageView extends StatefulWidget {
                 builder: (context, constraint) {
                   List menus = [
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/878/878052.png",
+                      "icon": "assets/icon.png",
                       "label": "Pondok \nAthfal",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PondokAthfalView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/3595/3595455.png",
+                      "icon": "assets/icon.png",
                       "label": "Pondok \nKraton",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PondokSunsalView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/2718/2718224.png",
+                      "icon": "assets/icon.png",
                       "label": "Pondok \nRanggeh",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PondokRanggehView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/8060/8060549.png",
+                      "icon": "assets/icon.png",
                       "label": "Pondok \nBesuki",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PondokBesukiView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/454/454570.png",
+                      "icon": "assets/icon.png",
                       "label": "Pondok \nPutri",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PondokPutriView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/2965/2965567.png",
+                      "icon": "assets/icon.png",
                       "label": "SMP Putra\nAl-azhar",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SmpPutraView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/2769/2769608.png",
+                      "icon": "assets/icon.png",
                       "label": "SMA Putra\nAl-azhar",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SmaPutraView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/1037/1037855.png",
+                      "icon": "assets/icon.png",
                       "label": "SMP Putri\nAl-azhar",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SmpPutriView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/454/454570.png",
+                      "icon": "assets/icon.png",
                       "label": "SMK Putri\nAl-azhar",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SmkPutriView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/2965/2965567.png",
+                      "icon": "assets/icon.png",
                       "label": "Madin Putra\n Sunniyah Salafiyah",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const MadinPutraView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/2769/2769608.png",
+                      "icon": "assets/icon.png",
                       "label": "Madin Putri",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const MadinPutriView()),
+                        );
+                      },
                     },
                     {
-                      "icon":
-                          "https://cdn-icons-png.flaticon.com/128/1037/1037855.png",
+                      "icon": "assets/icon.png",
                       "label": "STIT\n Sunniyah Salafiyah",
-                      "onTap": () {},
+                      "onTap": () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const StitView()),
+                        );
+                      },
                     },
                   ];
 
@@ -195,9 +256,9 @@ class HomepageView extends StatefulWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.network(
+                                Image.asset(
                                   item["icon"],
-                                  width: 30.0,
+                                  width: 80.0,
                                 ),
                                 const SizedBox(
                                   height: 6.0,
@@ -207,7 +268,7 @@ class HomepageView extends StatefulWidget {
                                   textAlign: TextAlign.center,
                                   overflow: TextOverflow.ellipsis,
                                   style: const TextStyle(
-                                    fontSize: 8.0,
+                                    fontSize: 9.0,
                                   ),
                                 ),
                               ],
@@ -237,199 +298,241 @@ class HomepageView extends StatefulWidget {
               const SizedBox(
                 height: 20.0,
               ),
-              Card(
-                clipBehavior: Clip.antiAlias,
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 80.0,
-                        height: 80.0,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage(
-                              "https://i.ibb.co/dGcQ5bw/photo-1549692520-acc6669e2f0c-ixlib-rb-1-2.jpg",
+              GestureDetector(
+                child: Card(
+                  clipBehavior: Clip.antiAlias,
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 80.0,
+                          height: 80.0,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://i.ibb.co/dGcQ5bw/photo-1549692520-acc6669e2f0c-ixlib-rb-1-2.jpg",
+                              ),
+                              fit: BoxFit.cover,
                             ),
-                            fit: BoxFit.cover,
                           ),
                         ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(12.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: const [
-                                  Text(
-                                    "PRODUCTIVITY",
-                                    style: TextStyle(
-                                      fontSize: 12.0,
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: const [
+                                    Text(
+                                      "PRODUCTIVITY",
+                                      style: TextStyle(
+                                        fontSize: 12.0,
+                                      ),
                                     ),
-                                  ),
-                                  Spacer(),
-                                  Text(
-                                    "3 days ago",
-                                    style: TextStyle(
-                                      fontSize: 10.0,
+                                    Spacer(),
+                                    Text(
+                                      "3 days ago",
+                                      style: TextStyle(
+                                        fontSize: 10.0,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 6.0,
-                              ),
-                              const Text(
-                                "7 Skills of Highly Effective Programmers",
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  fontSize: 12.0,
-                                  fontWeight: FontWeight.bold,
+                                  ],
                                 ),
-                              ),
-                            ],
+                                const SizedBox(
+                                  height: 6.0,
+                                ),
+                                const Text(
+                                  "7 Skills of Highly Effective Programmers",
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
               const SizedBox(
                 height: 10.0,
               ),
-              Card(
-                clipBehavior: Clip.antiAlias,
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 80.0,
-                        height: 80.0,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage(
-                              "https://i.ibb.co/dGcQ5bw/photo-1549692520-acc6669e2f0c-ixlib-rb-1-2.jpg",
+              GestureDetector(
+                child: Card(
+                  clipBehavior: Clip.antiAlias,
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 80.0,
+                          height: 80.0,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://i.ibb.co/dGcQ5bw/photo-1549692520-acc6669e2f0c-ixlib-rb-1-2.jpg",
+                              ),
+                              fit: BoxFit.cover,
                             ),
-                            fit: BoxFit.cover,
                           ),
                         ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(12.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: const [
-                                  Text(
-                                    "PRODUCTIVITY",
-                                    style: TextStyle(
-                                      fontSize: 12.0,
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: const [
+                                    Text(
+                                      "PRODUCTIVITY",
+                                      style: TextStyle(
+                                        fontSize: 12.0,
+                                      ),
                                     ),
-                                  ),
-                                  Spacer(),
-                                  Text(
-                                    "3 days ago",
-                                    style: TextStyle(
-                                      fontSize: 10.0,
+                                    Spacer(),
+                                    Text(
+                                      "3 days ago",
+                                      style: TextStyle(
+                                        fontSize: 10.0,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 6.0,
-                              ),
-                              const Text(
-                                "7 Skills of Highly Effective Programmers",
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  fontSize: 12.0,
-                                  fontWeight: FontWeight.bold,
+                                  ],
                                 ),
-                              ),
-                            ],
+                                const SizedBox(
+                                  height: 6.0,
+                                ),
+                                const Text(
+                                  "7 Skills of Highly Effective Programmers",
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
               const SizedBox(
                 height: 10.0,
               ),
-              Card(
-                clipBehavior: Clip.antiAlias,
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 80.0,
-                        height: 80.0,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage(
-                              "https://i.ibb.co/dGcQ5bw/photo-1549692520-acc6669e2f0c-ixlib-rb-1-2.jpg",
+              GestureDetector(
+                child: Card(
+                  clipBehavior: Clip.antiAlias,
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 80.0,
+                          height: 80.0,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://i.ibb.co/dGcQ5bw/photo-1549692520-acc6669e2f0c-ixlib-rb-1-2.jpg",
+                              ),
+                              fit: BoxFit.cover,
                             ),
-                            fit: BoxFit.cover,
                           ),
                         ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(12.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: const [
-                                  Text(
-                                    "PRODUCTIVITY",
-                                    style: TextStyle(
-                                      fontSize: 12.0,
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: const [
+                                    Text(
+                                      "PRODUCTIVITY",
+                                      style: TextStyle(
+                                        fontSize: 12.0,
+                                      ),
                                     ),
-                                  ),
-                                  Spacer(),
-                                  Text(
-                                    "3 days ago",
-                                    style: TextStyle(
-                                      fontSize: 10.0,
+                                    Spacer(),
+                                    Text(
+                                      "3 days ago",
+                                      style: TextStyle(
+                                        fontSize: 10.0,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 6.0,
-                              ),
-                              const Text(
-                                "7 Skills of Highly Effective Programmers",
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  fontSize: 12.0,
-                                  fontWeight: FontWeight.bold,
+                                  ],
                                 ),
-                              ),
-                            ],
+                                const SizedBox(
+                                  height: 6.0,
+                                ),
+                                const Text(
+                                  "7 Skills of Highly Effective Programmers",
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
+              ),
+              const SizedBox(
+                height: 0.0,
               ),
             ],
           ),
         ),
       ),
+      floatingActionButton: Container(
+        height: 65,
+        width: MediaQuery.of(context).size.width - (2 * 24),
+        margin: const EdgeInsets.symmetric(
+          horizontal: 24,
+        ),
+        decoration: BoxDecoration(
+          color: greyColor,
+          borderRadius: BorderRadius.circular(23),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: const [
+            BottomNavbarItem(
+              imageUrl: 'assets/icon_home.png',
+              isActive: true,
+            ),
+            BottomNavbarItem(
+              imageUrl: 'assets/icon_email.png',
+              isActive: false,
+            ),
+            BottomNavbarItem(
+              imageUrl: 'assets/icon_card.png',
+              isActive: false,
+            ),
+            BottomNavbarItem(
+              imageUrl: 'assets/icon_love.png',
+              isActive: false,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 

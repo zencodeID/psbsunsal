@@ -1,5 +1,5 @@
 {
-    "openai_key": "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",
+    "openai_key": "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",
     "modules": [
         "page/login",
         "page/logout",
@@ -13,11 +13,12 @@
         "page/pondok_putri",
         "page/smp_putra",
         "page/sma_putra",
-        "page/smk_putra",
+        "page/smk_putri",
         "page/smp_putri",
         "page/madin_putri",
         "page/madin_putra",
         "page/pondok_ranggeh",
-        "page/pondok_besuki"
+        "page/pondok_besuki",
+        "page/stit"
     ]
 }
