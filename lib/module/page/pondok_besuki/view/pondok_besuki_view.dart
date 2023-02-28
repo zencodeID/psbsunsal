@@ -3,7 +3,9 @@ import 'package:psbsunsal/core.dart';
 import '../controller/pondok_besuki_controller.dart';
 
 class PondokBesukiView extends StatefulWidget {
-  const PondokBesukiView({Key? key}) : super(key: key);
+  PondokBesukiView({Key? key}) : super(key: key);
+
+  final List<String> items = ['Oli', 'Gerenda', 'Jaket'];
 
   Widget build(context, PondokBesukiController controller) {
     controller.view = this;
@@ -48,8 +50,13 @@ class PondokBesukiView extends StatefulWidget {
         ),
         body: TabBarView(
           children: [
-            Container(
-              color: Colors.red[100],
+            ListView.builder(
+              itemCount: items.length, // Jumlah item dalam list
+              itemBuilder: (context, index) {
+                // Build setiap item dengan fungsi itemBuilder
+                return Text(items[
+                    index]); // Kembalikan widget teks dengan nilai string dari list
+              },
             ),
             Container(
               color: Colors.green[100],
