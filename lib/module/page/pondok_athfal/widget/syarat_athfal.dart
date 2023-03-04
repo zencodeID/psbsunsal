@@ -20,46 +20,51 @@ class SyaratAthfal extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: SingleChildScrollView(
-        child: Column(
-          children: [
-            const Text(
-              "Persyaratan Pondok Athfal",
-              style: TextStyle(
-                fontSize: 23.0,
-                fontWeight: FontWeight.w700,
-              ),
+        child: Card(
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              children: [
+                const Text(
+                  "Persyaratan Pondok Athfal",
+                  style: TextStyle(
+                    fontSize: 23.0,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                const Divider(
+                  color: Colors.grey,
+                  thickness: 1,
+                ),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Column(
+                  children: syarat.map(
+                    (strone) {
+                      return Row(
+                        children: [
+                          const Text(
+                            "\u2022",
+                            style: TextStyle(fontSize: 14),
+                          ), //bullet text
+                          const SizedBox(
+                            width: 10,
+                          ), //space between bullet and text
+                          Expanded(
+                            child: Text(
+                              strone,
+                              style: const TextStyle(fontSize: 14),
+                            ), //text
+                          ),
+                        ],
+                      );
+                    },
+                  ).toList(),
+                ),
+              ],
             ),
-            const Divider(
-              color: Colors.grey,
-              thickness: 1,
-            ),
-            const SizedBox(
-              height: 10.0,
-            ),
-            Column(
-              children: syarat.map(
-                (strone) {
-                  return Row(
-                    children: [
-                      const Text(
-                        "\u2022",
-                        style: TextStyle(fontSize: 14),
-                      ), //bullet text
-                      const SizedBox(
-                        width: 10,
-                      ), //space between bullet and text
-                      Expanded(
-                        child: Text(
-                          strone,
-                          style: const TextStyle(fontSize: 14),
-                        ), //text
-                      ),
-                    ],
-                  );
-                },
-              ).toList(),
-            ),
-          ],
+          ),
         ),
       ),
     );

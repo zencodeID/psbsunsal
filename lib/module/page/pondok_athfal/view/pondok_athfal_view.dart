@@ -50,7 +50,7 @@ class PondokAthfalView extends StatefulWidget {
                 text: "Download",
               ),
               Tab(
-                text: "Jadwal&Pendaftaran",
+                text: "Informasi Pendaftaran",
               ),
             ],
           ),

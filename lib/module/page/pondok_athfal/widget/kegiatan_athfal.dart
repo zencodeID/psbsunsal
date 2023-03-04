@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class KegiatanAthfal extends StatelessWidget {
   KegiatanAthfal({Key? key}) : super(key: key);
 
-  final List<Map<String, dynamic>> jadwalHarian = [
+  final List<Map<String, dynamic>> jadwalAthfal = [
     {
       'no': 1,
       'jam': '04.00 - 04.30',
@@ -116,7 +116,7 @@ class KegiatanAthfal extends StatelessWidget {
     },
     {
       'no': 23,
-      'jam': '23.00- Shubuh',
+      'jam': '23.00 - Shubuh',
       'kegiatan': "Wajib tidur malam",
     },
   ];
@@ -124,28 +124,33 @@ class KegiatanAthfal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: DataTable(
-          columns: const <DataColumn>[
-            DataColumn(
-              label: Text('#'),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Card(
+            child: DataTable(
+              columns: const <DataColumn>[
+                DataColumn(
+                  label: Text('#'),
+                ),
+                DataColumn(
+                  label: Text('Jam'),
+                ),
+                DataColumn(
+                  label: Text('Jenis Kegiatan'),
+                ),
+              ],
+              rows: jadwalAthfal
+                  .map((data) => DataRow(cells: [
+                        DataCell(Text(data['no'].toString())),
+                        DataCell(Text(data['jam'])),
+                        DataCell(Text(data[
+                            'kegiatan'])), // Fixed typo here, change 'jenis_kegiatan' to 'kegiatan'
+                      ]))
+                  .toList(),
             ),
-            DataColumn(
-              label: Text('Jam'),
-            ),
-            DataColumn(
-              label: Text('Jenis Kegiatan'),
-            ),
-          ],
-          rows: jadwalHarian
-              .map((data) => DataRow(cells: [
-                    DataCell(Text(data['no'].toString())),
-                    DataCell(Text(data['jam'])),
-                    DataCell(Text(data[
-                        'kegiatan'])), // Fixed typo here, change 'jenis_kegiatan' to 'kegiatan'
-                  ]))
-              .toList(),
+          ),
         ),
       ),
     );
