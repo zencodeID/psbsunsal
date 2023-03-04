@@ -72,6 +72,13 @@ class HomepageView extends StatefulWidget {
                                 color: Colors.white,
                               ),
                             ),
+                            Text(
+                              "Tahun Ajaran 2023-2024",
+                              style: TextStyle(
+                                fontSize: 14.0,
+                                color: Colors.white,
+                              ),
+                            ),
                           ],
                         ),
                       ),
