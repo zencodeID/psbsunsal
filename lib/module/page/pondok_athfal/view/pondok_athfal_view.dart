@@ -59,7 +59,7 @@ class PondokAthfalView extends StatefulWidget {
         body: TabBarView(
           children: [
             const ProfileAthfal(),
-            const KegiatanAthfal(),
+            KegiatanAthfal(),
             SyaratAthfal(),
             const BiayaAthfal(),
             const BrosurAthfal(),
@@ -73,4 +73,13 @@ class PondokAthfalView extends StatefulWidget {
 
   @override
   State<PondokAthfalView> createState() => PondokAthfalController();
+}
+
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
 }

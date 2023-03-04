@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 // }) : super(key: key);
 
 class DaftarAthfal extends StatelessWidget {
-  const DaftarAthfal({super.key});
+  const DaftarAthfal({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,70 +32,152 @@ class DaftarAthfal extends StatelessWidget {
               thickness: 1,
             ),
             const SizedBox(
-              height: 20.0,
+              height: 50.0,
             ),
-            Row(
-              children: <Widget>[
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    height: 50,
-                    color: Colors.grey.withOpacity(0.2),
-                  ),
+            Column(
+              children: [
+                Row(
+                  children: const [
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        'Gelombang',
+                        style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: Text(
+                        "Jadwal Pendataran",
+                        style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        "Tes Masuk",
+                        style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ],
                 ),
-                Expanded(
-                  flex: 2,
-                  child: Container(
-                    height: 50,
-                    color: Colors.grey.withOpacity(0.2),
-                  ),
+                const Divider(
+                  color: Colors.green,
+                  thickness: 1,
                 ),
-                Expanded(
-                  flex: 3,
-                  child: Container(
-                    height: 50,
-                    color: Colors.grey.withOpacity(0.2),
-                    
-                  ),
+                Row(
+                  children: const [
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        'Ke-1',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Colors.black45,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: Text(
+                        "01 Februari 2023 - 20 Maret 2023",
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Colors.black45,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        "20 Maret 2023",
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Colors.black45,
+                        ),
+                        textAlign: TextAlign.end,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Row(
+                  children: const [
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        'Ke-2',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Colors.black45,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: Text(
+                        "01 Februari 2023 - 20 Maret 2023",
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Colors.black45,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        "20 Maret 2023",
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Colors.black45,
+                        ),
+                        textAlign: TextAlign.end,
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
-            Row(
-              children: const [
-                Expanded(
-                  flex: 1,
-                  child: Text(
-                    'Gelombang',
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
+            const SizedBox(
+              height: 50.0,
+            ),
+            const Text(
+              "Dapat melakukan pendaftaran disini ",
+              style: TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.w700,
+                color: Colors.amberAccent,
+              ),
+            ),
+            Container(
+              height: 64,
+              width: MediaQuery.of(context).size.width,
+              padding: const EdgeInsets.all(12.0),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
                 ),
-                Expanded(
-                  flex: 1,
-                  child: Text(
-                    "Jadwal Pendataran",
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: Text(
-                    "Tanggal Tes Masuk",
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ],
+                onPressed: () {},
+                child: const Text("DAFTAR"),
+              ),
             ),
           ],
         ),
@@ -103,3 +185,5 @@ class DaftarAthfal extends StatelessWidget {
     );
   }
 }
+
+class FlatButton {}
