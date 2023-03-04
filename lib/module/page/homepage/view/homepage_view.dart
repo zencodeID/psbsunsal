@@ -23,8 +23,8 @@ class HomepageView extends StatefulWidget {
                 height: 160.0,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage(
-                      "https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
+                    image: AssetImage(
+                      "assets/kitab.jpg",
                     ),
                     fit: BoxFit.cover,
                   ),
@@ -51,13 +51,13 @@ class HomepageView extends StatefulWidget {
                       top: 0.0,
                       bottom: 0.0,
                       child: SizedBox(
-                        width: 100.0,
+                        width: MediaQuery.of(context).size.width,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
                             Text(
-                              "30%",
+                              "PSB SUNSAL",
                               style: TextStyle(
                                 fontSize: 30.0,
                                 color: Colors.white,
@@ -65,7 +65,7 @@ class HomepageView extends StatefulWidget {
                               ),
                             ),
                             Text(
-                              "Discount Only Valid for Today",
+                              "Informasi Penerimaan Santri Dan Mahasiswa Baru",
                               style: TextStyle(
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.bold,
