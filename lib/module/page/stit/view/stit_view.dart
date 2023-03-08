@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
+import 'package:psbsunsal/module/page/stit/widget/biaya_stit.dart';
+import 'package:psbsunsal/module/page/stit/widget/brosur_stit.dart';
+import 'package:psbsunsal/module/page/stit/widget/kegiatan_stit.dart';
+import 'package:psbsunsal/module/page/stit/widget/profile_stit.dart';
+import 'package:psbsunsal/module/page/stit/widget/syarat_stit.dart';
 import '../controller/stit_controller.dart';
 
 class StitView extends StatefulWidget {
@@ -48,21 +53,11 @@ class StitView extends StatefulWidget {
         ),
         body: TabBarView(
           children: [
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
+            const ProfileSTIT(),
+            const KegiatanSTIT(),
+            SyaratSTIT(),
+            const BiayaSTIT(),
+            const BrosurSTIT(),
             Container(
               color: Colors.blue[100],
             ),

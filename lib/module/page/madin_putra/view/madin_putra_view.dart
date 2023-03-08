@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
+import 'package:psbsunsal/module/page/madin_putra/widget/kegiatan_madinpa.dart';
+import 'package:psbsunsal/module/page/madin_putra/widget/profile_madinpa.dart';
 import '../controller/madin_putra_controller.dart';
+import '../widget/syarat_madinpa.dart';
 
 class MadinPutraView extends StatefulWidget {
   const MadinPutraView({Key? key}) : super(key: key);
@@ -47,15 +50,9 @@ class MadinPutraView extends StatefulWidget {
         ),
         body: TabBarView(
           children: [
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
+            const ProfileMadinPa(),
+            KegiatanMadinPa(),
+            SyaratMadinPa(),
             Container(
               color: Colors.red[100],
             ),
