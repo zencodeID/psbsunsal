@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
 import 'package:psbsunsal/module/page/stit/widget/biaya_stit.dart';
 import 'package:psbsunsal/module/page/stit/widget/brosur_stit.dart';
+import 'package:psbsunsal/module/page/stit/widget/daftar_stit.dart';
 import 'package:psbsunsal/module/page/stit/widget/kegiatan_stit.dart';
 import 'package:psbsunsal/module/page/stit/widget/profile_stit.dart';
 import 'package:psbsunsal/module/page/stit/widget/syarat_stit.dart';
@@ -45,7 +46,7 @@ class StitView extends StatefulWidget {
                 text: "Brosur",
               ),
               Tab(
-                text: "Download",
+                text: "Pendaftaran",
               ),
             ],
           ),
@@ -58,9 +59,7 @@ class StitView extends StatefulWidget {
             SyaratSTIT(),
             const BiayaSTIT(),
             const BrosurSTIT(),
-            Container(
-              color: Colors.blue[100],
-            ),
+            const DaftarSTIT(),
           ],
         ),
       ),
