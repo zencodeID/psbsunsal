@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class RincianBiaya extends StatelessWidget {
+class RincianBiayaMadinPi extends StatelessWidget {
   final String? rincian;
   final String? nominal;
-  const RincianBiaya({
+  const RincianBiayaMadinPi({
     Key? key,
     required this.rincian,
     required this.nominal,

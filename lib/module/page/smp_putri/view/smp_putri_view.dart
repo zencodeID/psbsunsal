@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
+import 'package:psbsunsal/module/page/smp_putri/widget/biaya_smpi.dart';
+import 'package:psbsunsal/module/page/smp_putri/widget/brosur_smpi.dart';
+import 'package:psbsunsal/module/page/smp_putri/widget/daftar_smpi.dart';
+import 'package:psbsunsal/module/page/smp_putri/widget/profile_smpi.dart';
 import '../controller/smp_putri_controller.dart';
+import '../widget/kegiatan_smpi.dart';
+import '../widget/syarat_smpi.dart';
 
 class SmpPutriView extends StatefulWidget {
   const SmpPutriView({Key? key}) : super(key: key);
@@ -46,26 +52,14 @@ class SmpPutriView extends StatefulWidget {
           ),
           // title: const Text('Order List'),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
+            ProfileSMPi(),
+            KegiatanSMPi(),
+            SyaratSMPi(),
+            BiayaSMPi(),
+            BrosurSMPi(),
+            DaftarSMPi(),
           ],
         ),
       ),

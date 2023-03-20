@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
+import 'package:psbsunsal/module/page/madin_putri/widget/biaya_madinpi.dart';
+import 'package:psbsunsal/module/page/madin_putri/widget/brosur_madinpi.dart';
+import 'package:psbsunsal/module/page/madin_putri/widget/download_madinpi.dart';
+import 'package:psbsunsal/module/page/madin_putri/widget/kegiatan_madinpi.dart';
+import 'package:psbsunsal/module/page/madin_putri/widget/profile_madinpi.dart';
+import 'package:psbsunsal/module/page/madin_putri/widget/syarat_madinpi.dart';
 import '../controller/madin_putri_controller.dart';
 
 class MadinPutriView extends StatefulWidget {
@@ -46,26 +52,14 @@ class MadinPutriView extends StatefulWidget {
           ),
           // title: const Text('Order List'),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
+            ProfileMadinPi(),
+            KegiatanMadinPi(),
+            SyaratMadinPi(),
+            BiayaMadinPi(),
+            BrosurMadinPi(),
+            DownloadMadinPi(),
           ],
         ),
       ),

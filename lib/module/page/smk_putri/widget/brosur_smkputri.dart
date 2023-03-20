@@ -1,10 +1,28 @@
 import 'package:flutter/material.dart';
 
-class BrosurMadinPa extends StatelessWidget {
-  const BrosurMadinPa({super.key});
+class BrosurSMKPutri extends StatelessWidget {
+  const BrosurSMKPutri({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Container(
+        height: 160.0,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+              "assets/STIT.jpg",
+            ),
+            fit: BoxFit.fitWidth,
+          ),
+          borderRadius: BorderRadius.all(
+            Radius.circular(
+              20.0,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }

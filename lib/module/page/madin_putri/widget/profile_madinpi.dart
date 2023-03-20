@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ProfileMadinPa extends StatelessWidget {
-  const ProfileMadinPa({super.key});
+class ProfileMadinPi extends StatelessWidget {
+  const ProfileMadinPi({super.key});
 
   @override
   Widget build(BuildContext context) {

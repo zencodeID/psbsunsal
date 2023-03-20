@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:psbsunsal/module/page/smp_putri/widget/util/rincian_biaya.dart';
+import 'package:psbsunsal/module/page/madin_putri/widget/util/rincian_biaya.dart';
 
-class BiayaSMPi extends StatelessWidget {
-  const BiayaSMPi({super.key});
+class BiayaMadinPi extends StatelessWidget {
+  const BiayaMadinPi({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class BiayaSMPi extends StatelessWidget {
         child: Column(
           children: [
             const Text(
-              "UANG AWAL STIT SUNSAL TAHUN AJARAN 2023-2024",
+              "UANG AWAL PONDOK ATHFAL TAHUN AJARAN 2023-2024",
               style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.w700,
@@ -38,24 +38,19 @@ class BiayaSMPi extends StatelessWidget {
                     SizedBox(
                       height: 10.0,
                     ),
-                    RincianBiayaSmpi(
-                        rincian: "Uang Pangkal/DPP  ", nominal: "4.000.000"),
-                    RincianBiayaSmpi(
-                        rincian: "Heregistrasi  ", nominal: "200.000"),
-                    RincianBiayaSmpi(
-                        rincian: "Perlengkapan ", nominal: "850.000"),
-                    RincianBiayaSmpi(rincian: "Kegiatan ", nominal: "550.000"),
-                    RincianBiayaSmpi(
-                        rincian: "SPP/perbulan", nominal: "950.000"),
-                    RincianBiayaSmpi(
-                        rincian: "Biaya pendidikan/semester ",
-                        nominal: "5.460.0000"),
+                    RincianBiayaMadinPi(
+                        rincian: "Uang Pangkal  ", nominal: " 3.500.000"),
+                    RincianBiayaMadinPi(
+                        rincian: "Perlengkapan  ", nominal: " 3.500.000"),
+                    RincianBiayaMadinPi(
+                        rincian: "Kegiatan ", nominal: " 3.500.000"),
+                    RincianBiayaMadinPi(rincian: "SPP ", nominal: " 3.500.000"),
                     Divider(
                       color: Colors.grey,
                       thickness: 1,
                     ),
-                    RincianBiayaSmpi(
-                        rincian: "Total Biaya ", nominal: "Rp. 12.010.000"),
+                    RincianBiayaMadinPi(
+                        rincian: "Total Biaya ", nominal: "Rp. 13.500.000"),
                   ],
                 ),
               ),
@@ -76,24 +71,19 @@ class BiayaSMPi extends StatelessWidget {
                     SizedBox(
                       height: 10.0,
                     ),
-                    RincianBiayaSmpi(
-                        rincian: "Uang Pangkal/DPP  ", nominal: "4.000.000"),
-                    RincianBiayaSmpi(
-                        rincian: "Heregistrasi  ", nominal: "200.000"),
-                    RincianBiayaSmpi(
-                        rincian: "Perlengkapan ", nominal: "850.000"),
-                    RincianBiayaSmpi(rincian: "Kegiatan ", nominal: "50.000"),
-                    RincianBiayaSmpi(
-                        rincian: "SPP/perbulan", nominal: "400.000"),
-                    RincianBiayaSmpi(
-                        rincian: "Biaya pendidikan/semester ",
-                        nominal: "5.460.0000"),
+                    RincianBiayaMadinPi(
+                        rincian: "Uang Pangkal  ", nominal: " 3.500.000"),
+                    RincianBiayaMadinPi(
+                        rincian: "Perlengkapan  ", nominal: " 3.500.000"),
+                    RincianBiayaMadinPi(
+                        rincian: "Kegiatan ", nominal: " 3.500.000"),
+                    RincianBiayaMadinPi(rincian: "SPP ", nominal: " 3.500.000"),
                     Divider(
                       color: Colors.grey,
                       thickness: 1,
                     ),
-                    RincianBiayaSmpi(
-                        rincian: "Total Biaya ", nominal: "Rp. 10.960.000"),
+                    RincianBiayaMadinPi(
+                        rincian: "Total Biaya ", nominal: "Rp. 13.500.000"),
                   ],
                 ),
               ),

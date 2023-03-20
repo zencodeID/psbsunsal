@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DaftarSMAPutra extends StatelessWidget {
-  const DaftarSMAPutra({super.key});
+class DaftarMadinPi extends StatelessWidget {
+  const DaftarMadinPi({super.key});
 
   @override
   Widget build(BuildContext context) {

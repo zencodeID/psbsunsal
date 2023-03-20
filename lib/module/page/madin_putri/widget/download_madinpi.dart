@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BrosurMadinPa extends StatelessWidget {
-  const BrosurMadinPa({super.key});
+class DownloadMadinPi extends StatelessWidget {
+  const DownloadMadinPi({super.key});
 
   @override
   Widget build(BuildContext context) {

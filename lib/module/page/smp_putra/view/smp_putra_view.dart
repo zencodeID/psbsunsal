@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
+import 'package:psbsunsal/module/page/smp_putra/widget/daftar_smpa.dart';
+import 'package:psbsunsal/module/page/smp_putra/widget/kegiatan_smpa.dart';
+import 'package:psbsunsal/module/page/smp_putra/widget/profile_smpa.dart';
 import '../controller/smp_putra_controller.dart';
+import '../widget/biaya_smpa.dart';
+import '../widget/brosur_smpa.dart';
+import '../widget/syarat_smpa.dart';
 
 class SmpPutraView extends StatefulWidget {
   const SmpPutraView({Key? key}) : super(key: key);
@@ -46,26 +52,14 @@ class SmpPutraView extends StatefulWidget {
           ),
           // title: const Text('Order List'),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
+            ProfileSMPPa(),
+            KegiatanSMPPa(),
+            SyaratSMPPa(),
+            BiayaSMPPa(),
+            BrosurSMPPa(),
+            DaftarSMPPa(),
           ],
         ),
       ),

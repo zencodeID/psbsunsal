@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
+import 'package:psbsunsal/module/page/pondok_sunsal/widget/kegiatan_pondokpusat.dart';
 import '../controller/pondok_sunsal_controller.dart';
+import '../widget/biaya_pondokpusat.dart';
+import '../widget/brosur_pondokpusat.dart';
+import '../widget/daftar_pondokpusat.dart';
+import '../widget/profile_pondokpusat.dart';
+import '../widget/syarat_pondokpusat.dart';
 
 class PondokSunsalView extends StatefulWidget {
   const PondokSunsalView({Key? key}) : super(key: key);
@@ -40,7 +46,7 @@ class PondokSunsalView extends StatefulWidget {
                 text: "Brosur",
               ),
               Tab(
-                text: "Download",
+                text: "Daftar",
               ),
             ],
           ),
@@ -48,24 +54,12 @@ class PondokSunsalView extends StatefulWidget {
         ),
         body: TabBarView(
           children: [
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
+            const ProfilePondokSunsal(),
+            KegiatanPondokSunsal(),
+            const BiayaPondokSunsal(),
+            const SyaratPondokSunsal(),
+            const BrosurPondokSunsal(),
+            const DaftarPondokSunsal(),
           ],
         ),
       ),

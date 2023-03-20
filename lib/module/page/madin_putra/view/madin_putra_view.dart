@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
+import 'package:psbsunsal/module/page/madin_putra/widget/biaya_madinpa.dart';
+import 'package:psbsunsal/module/page/madin_putra/widget/brosur_madinpa.dart';
+import 'package:psbsunsal/module/page/madin_putra/widget/download_madinpa.dart';
 import 'package:psbsunsal/module/page/madin_putra/widget/kegiatan_madinpa.dart';
 import 'package:psbsunsal/module/page/madin_putra/widget/profile_madinpa.dart';
 import '../controller/madin_putra_controller.dart';
@@ -53,15 +56,9 @@ class MadinPutraView extends StatefulWidget {
             const ProfileMadinPa(),
             KegiatanMadinPa(),
             SyaratMadinPa(),
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
+            const BiayaMadinPa(),
+            const BrosurMadinPa(),
+            const DownloadMadinPa(),
           ],
         ),
       ),

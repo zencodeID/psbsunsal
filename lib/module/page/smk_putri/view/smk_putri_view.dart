@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
+import 'package:psbsunsal/module/page/smk_putri/widget/biaya_smkputri.dart';
+import 'package:psbsunsal/module/page/smk_putri/widget/brosur_smkputri.dart';
+import 'package:psbsunsal/module/page/smk_putri/widget/kegiatan_smkputri.dart';
+import 'package:psbsunsal/module/page/smk_putri/widget/profile_smkputri.dart';
 import '../controller/smk_putri_controller.dart';
+import '../widget/daftar_smkputri.dart';
+import '../widget/syarat_smkputri.dart';
 
 class SmkPutriView extends StatefulWidget {
   const SmkPutriView({Key? key}) : super(key: key);
@@ -40,32 +46,20 @@ class SmkPutriView extends StatefulWidget {
                 text: "Brosur",
               ),
               Tab(
-                text: "Download",
+                text: "Pendaftaran",
               ),
             ],
           ),
           // title: const Text('Order List'),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
+            ProfileSMKPutri(),
+            KegiatanSMKPutri(),
+            SyaratSMKPutri(),
+            BiayaSMKPutri(),
+            BrosurSMKPutri(),
+            DaftarSMKPutri(),
           ],
         ),
       ),

@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
+import 'package:psbsunsal/module/page/pondok_putri/widget/biaya_azzahra.dart';
+import 'package:psbsunsal/module/page/pondok_putri/widget/profile_azzahra.dart';
 import '../controller/pondok_putri_controller.dart';
+import '../widget/brosur_azzahra.dart';
+import '../widget/daftar_azzahra.dart';
+import '../widget/kegiatan_azzahra.dart';
+import '../widget/syarat_azzahra.dart';
 
 class PondokPutriView extends StatefulWidget {
   const PondokPutriView({Key? key}) : super(key: key);
@@ -46,26 +52,14 @@ class PondokPutriView extends StatefulWidget {
           ),
           // title: const Text('Order List'),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
+            ProfilePondokPi(),
+            KegiatanPondokPi(),
+            SyaratPondokPi(),
+            BiayaPondokPi(),
+            BrosurPondokPi(),
+            DaftarPondokPi(),
           ],
         ),
       ),

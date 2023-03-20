@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
+import 'package:psbsunsal/module/page/pondok_besuki/widget/biaya_besuki.dart';
+import 'package:psbsunsal/module/page/pondok_besuki/widget/kegiatan_besuki.dart';
+import 'package:psbsunsal/module/page/pondok_besuki/widget/profile_besuki.dart';
+import 'package:psbsunsal/module/page/pondok_besuki/widget/syarat_besuki.dart';
 import '../controller/pondok_besuki_controller.dart';
+import '../widget/brosur_besuki.dart';
 
 class PondokBesukiView extends StatefulWidget {
-  PondokBesukiView({Key? key}) : super(key: key);
-
-  final List<String> items = ['Oli', 'Gerenda', 'Jaket'];
+  const PondokBesukiView({Key? key}) : super(key: key);
 
   Widget build(context, PondokBesukiController controller) {
-    controller.view = this;
-
     return DefaultTabController(
       length: 6,
       child: Scaffold(
@@ -48,31 +49,13 @@ class PondokBesukiView extends StatefulWidget {
           ),
           // title: const Text('Order List'),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
-            ListView.builder(
-              itemCount: items.length, // Jumlah item dalam list
-              itemBuilder: (context, index) {
-                // Build setiap item dengan fungsi itemBuilder
-                return Text(items[
-                    index]); // Kembalikan widget teks dengan nilai string dari list
-              },
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
-            Container(
-              color: Colors.red[100],
-            ),
-            Container(
-              color: Colors.green[100],
-            ),
-            Container(
-              color: Colors.blue[100],
-            ),
+            ProfilePondokBesuki(),
+            KegiatanPondokBesuki(),
+            SyaratPondokBesuki(),
+            BiayaPondokBesuki(),
+            BrosurPondokBesuki(),
           ],
         ),
       ),

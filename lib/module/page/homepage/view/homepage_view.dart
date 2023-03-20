@@ -143,7 +143,7 @@ class HomepageView extends StatefulWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => PondokBesukiView()),
+                              builder: (context) => const PondokBesukiView()),
                         );
                       },
                     },

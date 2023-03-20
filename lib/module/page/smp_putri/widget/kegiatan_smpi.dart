@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class KegiatanMadinPa extends StatelessWidget {
-  const KegiatanMadinPa({super.key});
+class KegiatanSMPi extends StatelessWidget {
+  const KegiatanSMPi({super.key});
 
   @override
   Widget build(BuildContext context) {
