@@ -46,20 +46,20 @@ class SmpPutraView extends StatefulWidget {
                 text: "Brosur",
               ),
               Tab(
-                text: "Download",
+                text: "Pendaftaran",
               ),
             ],
           ),
           // title: const Text('Order List'),
         ),
-        body: const TabBarView(
+        body: TabBarView(
           children: [
             ProfileSMPPa(),
             KegiatanSMPPa(),
-            SyaratSMPPa(),
-            BiayaSMPPa(),
-            BrosurSMPPa(),
-            DaftarSMPPa(),
+            const SyaratSMPPa(),
+            const BiayaSMPPa(),
+            const BrosurSMPPa(),
+            const DaftarSMPPa(),
           ],
         ),
       ),

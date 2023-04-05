@@ -12,7 +12,7 @@ class BrosurPondokSunsal extends StatelessWidget {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-              "assets/STIT.jpg",
+              "assets/not_found.png",
             ),
             fit: BoxFit.fitWidth,
           ),

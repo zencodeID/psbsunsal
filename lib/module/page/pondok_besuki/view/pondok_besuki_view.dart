@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:psbsunsal/core.dart';
 import 'package:psbsunsal/module/page/pondok_besuki/widget/biaya_besuki.dart';
+import 'package:psbsunsal/module/page/pondok_besuki/widget/daftar_besuki.dart';
 import 'package:psbsunsal/module/page/pondok_besuki/widget/kegiatan_besuki.dart';
 import 'package:psbsunsal/module/page/pondok_besuki/widget/profile_besuki.dart';
 import 'package:psbsunsal/module/page/pondok_besuki/widget/syarat_besuki.dart';
@@ -43,7 +44,7 @@ class PondokBesukiView extends StatefulWidget {
                 text: "Brosur",
               ),
               Tab(
-                text: "Download",
+                text: "Daftar",
               ),
             ],
           ),
@@ -56,6 +57,7 @@ class PondokBesukiView extends StatefulWidget {
             SyaratPondokBesuki(),
             BiayaPondokBesuki(),
             BrosurPondokBesuki(),
+            DaftarPondokBesuki(),
           ],
         ),
       ),

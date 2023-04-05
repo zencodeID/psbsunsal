@@ -93,7 +93,7 @@ class DaftarPondokSunsal extends StatelessWidget {
                         Expanded(
                           flex: 3,
                           child: Text(
-                            "01 Februari 2023 - 20 Maret 2023",
+                            "---",
                             style: TextStyle(
                               fontSize: 12.0,
                               color: Colors.black45,
@@ -104,7 +104,7 @@ class DaftarPondokSunsal extends StatelessWidget {
                         Expanded(
                           flex: 1,
                           child: Text(
-                            "20 Maret 2023",
+                            "---",
                             style: TextStyle(
                               fontSize: 12.0,
                               color: Colors.black45,
@@ -133,7 +133,7 @@ class DaftarPondokSunsal extends StatelessWidget {
                         Expanded(
                           flex: 3,
                           child: Text(
-                            "01 Februari 2023 - 20 Maret 2023",
+                            "---",
                             style: TextStyle(
                               fontSize: 12.0,
                               color: Colors.black45,
@@ -144,7 +144,7 @@ class DaftarPondokSunsal extends StatelessWidget {
                         Expanded(
                           flex: 1,
                           child: Text(
-                            "20 Maret 2023",
+                            "---",
                             style: TextStyle(
                               fontSize: 12.0,
                               color: Colors.black45,

@@ -46,7 +46,7 @@ class PondokSunsalView extends StatefulWidget {
                 text: "Brosur",
               ),
               Tab(
-                text: "Daftar",
+                text: "Pendaftaran",
               ),
             ],
           ),
@@ -56,8 +56,8 @@ class PondokSunsalView extends StatefulWidget {
           children: [
             const ProfilePondokSunsal(),
             KegiatanPondokSunsal(),
-            const BiayaPondokSunsal(),
             const SyaratPondokSunsal(),
+            const BiayaPondokSunsal(),
             const BrosurPondokSunsal(),
             const DaftarPondokSunsal(),
           ],

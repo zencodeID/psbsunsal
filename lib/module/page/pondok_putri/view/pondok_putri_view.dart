@@ -17,52 +17,52 @@ class PondokPutriView extends StatefulWidget {
     return DefaultTabController(
       length: 6,
       child: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back_ios_new, color: Colors.blueGrey),
-            onPressed: () => Navigator.of(context).pop(),
+          appBar: AppBar(
+            centerTitle: true,
+            leading: IconButton(
+              icon:
+                  const Icon(Icons.arrow_back_ios_new, color: Colors.blueGrey),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+            title: const Text(
+              "pondok putri az-zahro'",
+              style: TextStyle(fontSize: 16.0),
+            ),
+            bottom: const TabBar(
+              isScrollable: true,
+              tabs: [
+                Tab(
+                  text: "Profil",
+                ),
+                Tab(
+                  text: "Kegiatan Santri",
+                ),
+                Tab(
+                  text: "Persyaratan",
+                ),
+                Tab(
+                  text: "Biaya",
+                ),
+                Tab(
+                  text: "Brosur",
+                ),
+                Tab(
+                  text: "Pendaftaran",
+                ),
+              ],
+            ),
+            // title: const Text('Order List'),
           ),
-          title: const Text(
-            "pondok putri az-zahro'",
-            style: TextStyle(fontSize: 16.0),
-          ),
-          bottom: const TabBar(
-            isScrollable: true,
-            tabs: [
-              Tab(
-                text: "Profil",
-              ),
-              Tab(
-                text: "Kegiatan Santri",
-              ),
-              Tab(
-                text: "Persyaratan",
-              ),
-              Tab(
-                text: "Biaya",
-              ),
-              Tab(
-                text: "Brosur",
-              ),
-              Tab(
-                text: "Download",
-              ),
+          body: TabBarView(
+            children: [
+              ProfilePondokPi(),
+              KegiatanPondokPi(),
+              const SyaratPondokPi(),
+              const BiayaPondokPi(),
+              const BrosurPondokPi(),
+              const DaftarPondokPi(),
             ],
-          ),
-          // title: const Text('Order List'),
-        ),
-        body: const TabBarView(
-          children: [
-            ProfilePondokPi(),
-            KegiatanPondokPi(),
-            SyaratPondokPi(),
-            BiayaPondokPi(),
-            BrosurPondokPi(),
-            DaftarPondokPi(),
-          ],
-        ),
-      ),
+          )),
     );
   }
 

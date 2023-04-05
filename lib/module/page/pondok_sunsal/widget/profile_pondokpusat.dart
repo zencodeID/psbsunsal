@@ -19,7 +19,7 @@ class ProfilePondokSunsal extends StatelessWidget {
                 ),
                 Text(
                   "PROFIL PONDOK PUTRA SUNNIYAH SALAFIYAH",
-                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
                 ),
                 Divider(
                   color: Colors.grey,
@@ -53,7 +53,7 @@ class ProfilePondokSunsal extends StatelessWidget {
                 Text(
                   "Visi, Misi dan Tujuan Pondok Pesantren Sunniyah Salafiyah",
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 14,
                     color: Colors.blue,
                     fontWeight: FontWeight.w700,
                   ),

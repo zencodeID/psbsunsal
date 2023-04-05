@@ -39,19 +39,29 @@ class BiayaPondokPi extends StatelessWidget {
                       height: 10.0,
                     ),
                     RincianBiayaPondokpi(
-                        rincian: "Uang Pangkal  ", nominal: " 3.500.000"),
+                      rincian: "Uang Pangkal",
+                      nominal: " 3.000.000",
+                    ),
                     RincianBiayaPondokpi(
-                        rincian: "Perlengkapan  ", nominal: " 3.500.000"),
+                      rincian: "Perlengkapan",
+                      nominal: " 1.800.000",
+                    ),
                     RincianBiayaPondokpi(
-                        rincian: "Kegiatan ", nominal: " 3.500.000"),
+                      rincian: "Kegiatan",
+                      nominal: " 550.000",
+                    ),
                     RincianBiayaPondokpi(
-                        rincian: "SPP ", nominal: " 3.500.000"),
+                      rincian: "SPP",
+                      nominal: " 950.000",
+                    ),
                     Divider(
                       color: Colors.grey,
                       thickness: 1,
                     ),
                     RincianBiayaPondokpi(
-                        rincian: "Total Biaya ", nominal: "Rp. 13.500.000"),
+                      rincian: "Total Biaya",
+                      nominal: "Rp. 6.300.000",
+                    ),
                   ],
                 ),
               ),
@@ -73,19 +83,29 @@ class BiayaPondokPi extends StatelessWidget {
                       height: 10.0,
                     ),
                     RincianBiayaPondokpi(
-                        rincian: "Uang Pangkal  ", nominal: " 3.500.000"),
+                      rincian: "Uang Pangkal  ",
+                      nominal: " 650.000",
+                    ),
                     RincianBiayaPondokpi(
-                        rincian: "Perlengkapan  ", nominal: " 3.500.000"),
+                      rincian: "Perlengkapan  ",
+                      nominal: " 1.350.000",
+                    ),
                     RincianBiayaPondokpi(
-                        rincian: "Kegiatan ", nominal: " 3.500.000"),
+                      rincian: "Kegiatan ",
+                      nominal: " 250.000",
+                    ),
                     RincianBiayaPondokpi(
-                        rincian: "SPP ", nominal: " 3.500.000"),
+                      rincian: "SPP ",
+                      nominal: " 400.000",
+                    ),
                     Divider(
                       color: Colors.grey,
                       thickness: 1,
                     ),
                     RincianBiayaPondokpi(
-                        rincian: "Total Biaya ", nominal: "Rp. 13.500.000"),
+                      rincian: "Total Biaya ",
+                      nominal: "Rp. 2.650.000",
+                    ),
                   ],
                 ),
               ),

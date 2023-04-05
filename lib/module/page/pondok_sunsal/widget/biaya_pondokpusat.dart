@@ -39,18 +39,16 @@ class BiayaPondokSunsal extends StatelessWidget {
                       height: 10.0,
                     ),
                     RincianBiayaPondok(
-                        rincian: "Uang Pangkal  ", nominal: " 3.500.000"),
+                        rincian: "Uang Pangkal  ", nominal: " -"),
                     RincianBiayaPondok(
-                        rincian: "Perlengkapan  ", nominal: " 3.500.000"),
-                    RincianBiayaPondok(
-                        rincian: "Kegiatan ", nominal: " 3.500.000"),
-                    RincianBiayaPondok(rincian: "SPP ", nominal: " 3.500.000"),
+                        rincian: "Perlengkapan  ", nominal: " -"),
+                    RincianBiayaPondok(rincian: "Kegiatan ", nominal: " -"),
+                    RincianBiayaPondok(rincian: "SPP ", nominal: " -"),
                     Divider(
                       color: Colors.grey,
                       thickness: 1,
                     ),
-                    RincianBiayaPondok(
-                        rincian: "Total Biaya ", nominal: "Rp. 13.500.000"),
+                    RincianBiayaPondok(rincian: "Total Biaya ", nominal: "-"),
                   ],
                 ),
               ),
@@ -72,18 +70,16 @@ class BiayaPondokSunsal extends StatelessWidget {
                       height: 10.0,
                     ),
                     RincianBiayaPondok(
-                        rincian: "Uang Pangkal  ", nominal: " 3.500.000"),
+                        rincian: "Uang Pangkal  ", nominal: " -"),
                     RincianBiayaPondok(
-                        rincian: "Perlengkapan  ", nominal: " 3.500.000"),
-                    RincianBiayaPondok(
-                        rincian: "Kegiatan ", nominal: " 3.500.000"),
-                    RincianBiayaPondok(rincian: "SPP ", nominal: " 3.500.000"),
+                        rincian: "Perlengkapan  ", nominal: " -"),
+                    RincianBiayaPondok(rincian: "Kegiatan ", nominal: " -"),
+                    RincianBiayaPondok(rincian: "SPP ", nominal: " -"),
                     Divider(
                       color: Colors.grey,
                       thickness: 1,
                     ),
-                    RincianBiayaPondok(
-                        rincian: "Total Biaya ", nominal: "Rp. 13.500.000"),
+                    RincianBiayaPondok(rincian: "Total Biaya ", nominal: "-"),
                   ],
                 ),
               ),

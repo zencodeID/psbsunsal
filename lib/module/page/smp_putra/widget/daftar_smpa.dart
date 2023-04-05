@@ -41,7 +41,7 @@ class DaftarSMPPa extends StatelessWidget {
                         Expanded(
                           flex: 1,
                           child: Text(
-                            'Gelombang',
+                            'Gel',
                             style: TextStyle(
                               fontSize: 15.0,
                               fontWeight: FontWeight.bold,
@@ -61,7 +61,7 @@ class DaftarSMPPa extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          flex: 1,
+                          flex: 3,
                           child: Text(
                             "Tes Masuk",
                             style: TextStyle(
@@ -93,7 +93,7 @@ class DaftarSMPPa extends StatelessWidget {
                         Expanded(
                           flex: 3,
                           child: Text(
-                            "01 Februari 2023 - 20 Maret 2023",
+                            "01 Februari 2023\n- 08 April 2023",
                             style: TextStyle(
                               fontSize: 12.0,
                               color: Colors.black45,
@@ -102,9 +102,9 @@ class DaftarSMPPa extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          flex: 1,
+                          flex: 3,
                           child: Text(
-                            "20 Maret 2023",
+                            "06 Mei 2023 (Online)\n07 Mei 2023 (Offline)",
                             style: TextStyle(
                               fontSize: 12.0,
                               color: Colors.black45,
@@ -133,7 +133,7 @@ class DaftarSMPPa extends StatelessWidget {
                         Expanded(
                           flex: 3,
                           child: Text(
-                            "01 Februari 2023 - 20 Maret 2023",
+                            "08 Mei 2023\n-04 Juni 2023",
                             style: TextStyle(
                               fontSize: 12.0,
                               color: Colors.black45,
@@ -142,9 +142,9 @@ class DaftarSMPPa extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          flex: 1,
+                          flex: 3,
                           child: Text(
-                            "20 Maret 2023",
+                            "10 Juni 2023 (online)\n11 Juni 2023 ( Offline)",
                             style: TextStyle(
                               fontSize: 12.0,
                               color: Colors.black45,

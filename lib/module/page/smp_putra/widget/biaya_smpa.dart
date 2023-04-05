@@ -39,51 +39,29 @@ class BiayaSMPPa extends StatelessWidget {
                       height: 10.0,
                     ),
                     RincianBiayaSMPutra(
-                        rincian: "Uang Pangkal  ", nominal: " 3.500.000"),
+                      rincian: "Uang Pangkal  ",
+                      nominal: " 3.000.000",
+                    ),
                     RincianBiayaSMPutra(
-                        rincian: "Perlengkapan  ", nominal: " 3.500.000"),
+                      rincian: "Perlengkapan  ",
+                      nominal: " 1.720.000",
+                    ),
                     RincianBiayaSMPutra(
-                        rincian: "Kegiatan ", nominal: " 3.500.000"),
-                    RincianBiayaSMPutra(rincian: "SPP ", nominal: " 3.500.000"),
+                      rincian: "Kegiatan ",
+                      nominal: " 1.275.000",
+                    ),
+                    RincianBiayaSMPutra(
+                      rincian: "SPP ",
+                      nominal: " 1.100.000",
+                    ),
                     Divider(
                       color: Colors.grey,
                       thickness: 1,
                     ),
                     RincianBiayaSMPutra(
-                        rincian: "Total Biaya ", nominal: "Rp. 13.500.000"),
-                  ],
-                ),
-              ),
-            ),
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      "FullDay",
-                      style: TextStyle(
-                          fontSize: 14.0,
-                          color: Colors.blue,
-                          fontWeight: FontWeight.w700),
+                      rincian: "Total Biaya ",
+                      nominal: "Rp. 7.095.000",
                     ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    RincianBiayaSMPutra(
-                        rincian: "Uang Pangkal  ", nominal: " 3.500.000"),
-                    RincianBiayaSMPutra(
-                        rincian: "Perlengkapan  ", nominal: " 3.500.000"),
-                    RincianBiayaSMPutra(
-                        rincian: "Kegiatan ", nominal: " 3.500.000"),
-                    RincianBiayaSMPutra(rincian: "SPP ", nominal: " 3.500.000"),
-                    Divider(
-                      color: Colors.grey,
-                      thickness: 1,
-                    ),
-                    RincianBiayaSMPutra(
-                        rincian: "Total Biaya ", nominal: "Rp. 13.500.000"),
                   ],
                 ),
               ),
